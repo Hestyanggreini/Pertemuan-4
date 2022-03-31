@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font AWS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background: #304352;
+        background: -webkit-linear-gradient(to right, #d7d2cc, #304352);
+        background: linear-gradient(to right, #d7d2cc, #304352);
+        padding-bottom: 3rem;
+      }
+      .col-2 {
+        display: flex;
+        align-items: center;
+      }
+
+      .container {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+      }
+    </style>
+
+    <title>Form HTML</title>
+  </head>
+  <body>
+    <div class="container p-4 shadow mt-4 border-0 rounded">
+      <h4 class="mb-3">
+        <i class="fa-solid fa-pen-to-square me-2"></i> Update Existing Film
+      </h4>
+      <form action="">
+        <div class="row">
+          <div class="mb-3 col-2">
+            <label for="thumbnail">Thumbnail <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <input class="form-control" type="file" id="thumbnail" />
+            </div>
+          </div>
+          <div class="mb-3 col-2">
+            <label for="title">Title <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <input class="form-control" type="text" id="title" />
+            </div>
+          </div>
+          <div class="mb-3 col-2" style="align-items: flex-start">
+            <label for="title">Description</label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <textarea name="desc" id="desc" class="form-control" cols="10">
+              </textarea>
+            </div>
+          </div>
+          <div class="mb-3 col-2">
+            <label for="year">Release Year</label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <input class="form-control" type="text" id="year" />
+            </div>
+          </div>
+          <div class="mb-3 col-2">
+            <label for="lang">Language <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <select
+                class="form-select"
+                id="lang"
+                aria-label="Default select example"
+              >
+                <option selected>English</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Thailand</option>
+                <option value="3">Mandarin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3 col-2">
+            <label for="lang">Original Language</label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <select
+                class="form-select"
+                id="lang"
+                aria-label="Default select example"
+              >
+                <option selected>-</option>
+                <option>English</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Thailand</option>
+                <option value="3">Mandarin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3 col-2">
+            <label for="lang">Rental Duration <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">days</span>
+            </div>
+          </div>
+
+          <div class="mb-3 col-2">
+            <label for="lang">Rental Rate <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">$</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3 col-2">
+            <label for="year">Length</label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2">minutes</span>
+            </div>
+          </div>
+
+          <div class="mb-3 col-2">
+            <label for="lang">Replacement Cost <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">$</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3 col-2">
+            <label for="lang">Rating <sup>*</sup></label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <select
+                class="form-select"
+                id="lang"
+                aria-label="Default select example"
+              >
+                <option selected>PG</option>
+                <option value="1">PG 1</option>
+                <option value="2">PG 2</option>
+                <option value="3">PG 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3 col-2" style="align-items: flex-start">
+            <label for="lang">Special Features </label>
+          </div>
+          <div class="mb-3 col-10">
+            <div class="">
+              <select
+                class="form-select"
+                multiple
+                aria-label="multiple select example"
+              >
+                <option>Trailers</option>
+                <option value="1">Commentaries</option>
+                <option value="2" selected>Delete Scenes</option>
+                <option value="3" selected>Behind the Scanes</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-2"></div>
+          <div class="col-10">
+            <a href="" class="btn btn-primary"
+              ><i class="fa-solid fa-paper-plane me-2"></i> Submit</a
+            >
+            <a href="" class="btn btn-outline-light"
+              ><i class="fa-solid fa-arrow-left-long me-2"></i> Back</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
